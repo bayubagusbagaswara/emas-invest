@@ -8,6 +8,15 @@ Ada 2 garis besar:
 
 ## Beli Rutin Emas dari Beli Biasa
 
+- Layar awal beli rutin emas dimulai dari dashboard emas di menu `Beli Rutin Emas`
+
+![Dashboard_Emas](img/dashboard_emas.png)
+
+- Saat user memilih menu `Beli Rutin Emas`, maka akan menampilkan layar berikut:
+
+![Beli_Rutin_Emas](img/beli_rutin_emas.png)
+
+- Pada layar simulasi perhitungan emas, membutuhkan beberapa data parameterize.
 - Data parameter yang dibutuhkan :
 
 ```bash
@@ -60,16 +69,77 @@ Ada 2 garis besar:
 
 Ada 2 alur bisnisnya:
 
-1. Beli rutin emas melalui tabungan
-2. Beli rutin emas melalui bagi hasil
+1. Beli rutin emas melalui Tabungan
+2. Beli rutin emas melalui Bagi Hasil
 
 ### Dari Portfolio Dashboard Emas
 
 ![Portfolio_Dashboard_Emas](img/portfolio_dashboard_emas.png)
 
-1. Nasabah akan memilih menu `Beli Rutin Emas`
-2. Lalu akan ada pengecekan `Punya jadwal rutin`
+- Nasabah akan memilih menu `Beli Rutin Emas`
+- Lalu akan ada pengecekan `Punya jadwal rutin`
 
 ![Cek_Punya_Jadwal_Rutin](img/cek-punya-jadwal-beli-rutin.png)
+
+- Jika user `Tidak Punya Tabungan Rutin`, maka akan tampil layar pemilihan `Pilih Sumber Pembelian`, dengan pilihan seperti berikut : `Tabungan` dan `Bagi Hasil`
+- Tetapi tabungan rutin yang dicheck hanya khusus Emas. Jadi apakah nasabah sudah punya tabungan beli rutin emas atau belum
+
+![Pilih_Sumber_Pembelian](img/pilih_sumber_pembelian.png)
+
+#### Pilih Sumber Pembelian Tabungan
+
+- Jika user memilih sumber pembelian Tabungan untuk beli rutin emas, maka layar akan seperti berikut:
+
+![Beli_Rutin_Emas_Sumber_Tabungan](img/beli_rutin_emas_sumber_tabungan.png)
+
+- Kemudian di backend akan menyediakan API `/inquiry`
+- Request nya :
+
+```json
+{
+  "accountIndex": "",
+  "tanggalPembelianRutin": "",
+  "rutinHingga": "",
+  "nominalPembelian": ""
+}
+```
+
+![Beli_Rutin_Emas_Sumber_Tabungan_Konfirmasi](img/beli_rutin_emas_sumber_tabungan_konfirmasi.png)
+
+- Disini juga ada pengecekan untuk transaksi bisa dilakukan atau tidak
+- Jika lolos pengecekan, maka akan mengembalikan response isOpenSuccess = true, dan errorCode nya tidak ada
+- Response nya adalah :
+
+```json
+{
+  "isOpenSuccess": "",
+  "tanggalPembelianRutin": "",
+  "rutinHingga": "",
+  "nominalPembelian": "",
+  "errorCode": "",
+  "errorMessage": "",
+  "idnMessage": "",
+  "engMessage": ""
+}
+```
+
+#### Pilih Sumber Pembelian Bagi Hasil
+
+- User akan memilih `Bagi Hasil`
+- Ada API lagi untuk menyediakan list tabungan yang ada bagi hasilnya
+
+![Beli_Rutin_Sumber_Bagi_Hasil](img/beli_rutin_emas_sumber_bagi_hasil.png)
+
+- Ada response jika nasabah tidak memiliki tabungan bagi hasil, seperti layar dibawah ini:
+
+![Beli_Rutin_Sumber_Bagi_Hasil_Tidak_Ada](img/beli_rutin_sumber_bagi_hasil_tidak_ada.png)
+
+- List tabungan bagi hasil bisa dipilih dalam bentuk checklist
+
+![Beli_Rutin_Sumber_Bagi_Hasil_Checklist](img/beli_rutin_emas_sumber_bagi_hasil_checklist.png)
+
+- Pada resi juga akan menampilkan tabungan bagi hasil yang telah di checklist diawal sebelumnya
+
+![Beli_Rutin_Sumber_Bagi_Hasil_Resi](img/beli_rutin_emas_sumber_bagi_hasil_resi.png)
 
 ## History Beli Rutin Emas
