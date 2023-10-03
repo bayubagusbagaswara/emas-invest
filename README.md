@@ -142,4 +142,102 @@ Ada 2 alur bisnisnya:
 
 ![Beli_Rutin_Sumber_Bagi_Hasil_Resi](img/beli_rutin_emas_sumber_bagi_hasil_resi.png)
 
+- Template Code Receipt format HTML
+
+```json
+{
+  "transactionStatusData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"16\" type=\"autosize\" weight=\"bold\">USD ${transactionAmountUSD}</font><br><font color=\"#9E000000\" size=\"14\" weight=\"normal\">Setara IDR ${transactionAmountIDR}</font>",
+      "key": "Sumber Pembelian",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountNumber}</font>",
+      "key": "Pembelian\nBerdasarkan",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">USD 1 = IDR ${kursUSDToIDR}</font>",
+      "key": "Kurs Beli",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "detailTransaksi": [
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountAlias}</font>",
+          "key": "Rekening\nSumber 1",
+          "type": "data",
+          "background": "#00FFFFFF"
+        },
+        {
+          "value": "",
+          "key": "",
+          "type": "line"
+        }
+      ]
+    }
+  ],
+  "receiptData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"21\" type=\"autosize\" weight=\"bold\">USD ${transactionAmountUSD}</font><br><font color=\"#9E000000\" size=\"14\" weight=\"normal\">Setara IDR ${transactionAmountIDR}</font>",
+      "key": "Nominal Transaksi",
+      "type": "data",
+      "background": "#FFF5E6"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">${fromAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromBankShortName} • ${fromAccountNumberWithMask}</font>",
+      "key": "Rekening\nSumber",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">Tabungan Valas</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toBankShortName} • ${toAccountNumberWithMask}</font>",
+      "key": "Rekening\nPenerima",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">USD 1 = IDR ${kursUSDToIDR}</font>",
+      "key": "Kurs Beli",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${coreRefNo}</font>",
+      "key": "Nomor Transaksi",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    }
+  ]
+}
+```
+
+- Jika beli rutin emas gagal, maka akan ditampilkan receipt sebagai berikut:
+
+![Beli_Rutin_Bagi_Hasil_Gagal](img/beli-rutin-emas-bagi-hasil-gagal.png)
+
 ## History Beli Rutin Emas
