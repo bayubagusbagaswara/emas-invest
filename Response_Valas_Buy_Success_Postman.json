@@ -1,0 +1,100 @@
+{
+  "responseCode": "00",
+  "responseMessage": "Success",
+  "date": "11 Okt 2023",
+  "time": "16:13",
+  "transactionDate": "2023-10-11 16:13:33",
+  "receiptData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"21\" type=\"autosize\" weight=\"bold\">USD 14.575</font><br><font color=\"#9E000000\" size=\"14\" weight=\"normal\">Setara IDR 10.000.000</font>",
+      "key": "Nominal Transaksi",
+      "type": "data",
+      "background": "#FFF5E6"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\"></font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">BSI • </font>",
+      "key": "Rekening\nSumber",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">Tabungan Valas</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">BSI • </font>",
+      "key": "Rekening\nPenerima",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">USD 1 = IDR 14.875</font>",
+      "key": "Kurs Beli",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">FT231328XVBP</font>",
+      "key": "Nomor Transaksi",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    }
+  ],
+  "transactionStatusData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"16\" type=\"autosize\" weight=\"bold\">USD 14.575</font><br><font color=\"#9E000000\" size=\"14\" weight=\"normal\">Setara IDR 10.000.000</font>",
+      "key": "Nominal Transaksi",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\"></font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\"></font>",
+      "key": "Rekening\nSumber",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">USD 1 = IDR 14.875</font>",
+      "key": "Kurs Beli",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "detailTransaksi": [
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">Tabungan Valas</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\"></font>",
+          "key": "Rekening\nPenerima",
+          "type": "data",
+          "background": "#00FFFFFF"
+        },
+        {
+          "value": "",
+          "key": "",
+          "type": "line"
+        },
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">FT231328XVBP</font>",
+          "key": "Nomor Transaksi",
+          "type": "data",
+          "background": "#00FFFFFF"
+        }
+      ]
+    }
+  ]
+}

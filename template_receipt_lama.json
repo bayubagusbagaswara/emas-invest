@@ -1,0 +1,127 @@
+{
+  "transactionStatusData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">${sumberPembelian}</font>",
+      "key": "Sumber Pembelian",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">${pembelianBerdasarkan}</font>",
+      "key": "Pembelian Berdasarkan",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountNumber}</font>",
+      "key": "Rekening E-mas",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "detailTransaksi": [
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias1}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber1}</font>",
+          "key": "Rekening Sumber 1",
+          "type": "data",
+          "background": "#00FFFFFF"
+        },
+        {
+          "value": "",
+          "key": "",
+          "type": "line"
+        },
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias2}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber2}</font>",
+          "key": "Rekening Sumber 2",
+          "type": "data",
+          "background": "#00FFFFFF"
+        },
+        {
+          "value": "",
+          "key": "",
+          "type": "line"
+        },
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias3}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber3}</font>",
+          "key": "Rekening Sumber 3",
+          "type": "data",
+          "background": "#00FFFFFF"
+        }
+      ]
+    }
+  ],
+  "receiptData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">${sumberPembelian}</font>",
+      "key": "Sumber Pembelian",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"bold\">${pembelianBerdasarkan}</font>",
+      "key": "Pembelian Berdasarkan",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountNumber}</font>",
+      "key": "Rekening E-mas",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias1}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber1}</font>",
+      "key": "Rekening Sumber 1",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias2}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber2}</font>",
+      "key": "Rekening Sumber 2",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountAlias3}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${toAccountNumber3}</font>",
+      "key": "Rekening Sumber 3",
+      "type": "data",
+      "background": "#00FFFFFF"
+    }
+  ]
+}
