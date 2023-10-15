@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Gaya CSS */
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 25px 24px 24px 24px;
+        background-color: #fafafa;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <center
+      role="article"
+      aria-roledescription="email"
+      lang="en"
+      style="width: 100%; background-color: #f8f8f8"
+    >
+      <div style="max-width: 600px; margin: 0 auto" class="email-container">
+        <div class="main"></div>
+        <table
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          style="margin: auto"
+        >
+          <tbody>
+            <tr>
+              <td
+                align="left"
+                style="
+                  padding: 24px;
+                  background-color: #ffffff;
+                  text-align: left;
+                "
+              >
+                <img
+                  src="https://storage.googleapis.com/bsisuperapp2.bankbsi.co.id/assets/email/logo.png"
+                  width="111px"
+                  height="32px"
+                  alt="Bsi logo"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 32px; background-color: #ffffff">
+                <h2
+                  style="
+                    color: rgba(0, 0, 0, 0.96);
+                    font-family: DM Sans, sans-serif;
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 26px;
+                  "
+                >
+                  Pengajuan Beli Emas Rutin Berhasil
+                </h2>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 32px; background-color: #ffffff">
+                <p
+                  style="
+                    color: rgba(0, 0, 0, 0.96);
+                    font-family: DM Sans, sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                  "
+                >
+                  Assalamualaikum ${nasabah},
+                </p>
+                <p
+                  style="
+                    color: rgba(0, 0, 0, 0.62);
+                    font-family: DM Sans, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                  "
+                >
+                  Berikut merupakan detail transaksi anda:
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  width: 10px;
+                  font-size: 14px;
+                "
+              >
+                Rekening Sumber
+              </td>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  font-size: 14px;
+                  width: 10px;
+                "
+              >
+                ${fromAccountAlias}<br />${fromAccountNumber}
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  width: 10px;
+                  font-size: 14px;
+                "
+              >
+                Tanggal Transaksi
+              </td>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  font-size: 14px;
+                  width: 10px;
+                "
+              >
+                ${transactionDate}
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  width: 10px;
+                  font-size: 14px;
+                "
+              >
+                Jam
+              </td>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  border-bottom: 1px solid #e0e0e0;
+                  font-size: 14px;
+                  width: 10px;
+                "
+              >
+                ${transactionTime}
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  width: 10px;
+                  font-size: 14px;
+                "
+              >
+                Terminal
+              </td>
+              <td
+                style="
+                  padding: 25px 24px 24px 24px;
+                  background-color: #fafafa;
+                  font-size: 14px;
+                  width: 10px;
+                "
+              >
+                ${terminal}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
