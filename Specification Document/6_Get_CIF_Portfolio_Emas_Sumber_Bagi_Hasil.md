@@ -8,7 +8,7 @@
 ## Request
 
 - Authorization : Bearer Token
-- Request Param : cif
+- Request Param : `cif`
 
 ## Response Positive
 
