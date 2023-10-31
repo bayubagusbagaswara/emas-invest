@@ -1,0 +1,74 @@
+[
+  {
+    "dt": "2023-10-24",
+    "pbuy": "994640",
+    "psell": "939000",
+    "fbuy": "0",
+    "fsell": "0",
+    "Growth_psell": "",
+    "Growth_pbuy": ""
+  },
+  {
+    "dt": "2023-10-25",
+    "pbuy": "2000000",
+    "psell": "1800000",
+    "fbuy": "101.08",
+    "fsell": "91.69",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-26",
+    "pbuy": "1200000",
+    "psell": "1000000",
+    "fbuy": "20.65",
+    "fsell": "6.50",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-27",
+    "pbuy": "1200000",
+    "psell": "1000000",
+    "fbuy": "20.65",
+    "fsell": "6.50",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-28",
+    "pbuy": "1200000",
+    "psell": "1000000",
+    "fbuy": "20.65",
+    "fsell": "6.50",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-29",
+    "pbuy": "1200000",
+    "psell": "1000000",
+    "fbuy": "20.65",
+    "fsell": "6.50",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-30",
+    "pbuy": "1200000",
+    "psell": "1000000",
+    "fbuy": "20.65",
+    "fsell": "6.50",
+    "Growth_psell": "+",
+    "Growth_pbuy": "+"
+  },
+  {
+    "dt": "2023-10-31",
+    "pbuy": "994640.00",
+    "psell": "939000.00",
+    "fbuy": "-17.11",
+    "fsell": "-6.10",
+    "Growth_psell": "-",
+    "Growth_pbuy": "-"
+  }
+]
