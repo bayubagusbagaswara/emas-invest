@@ -2,7 +2,7 @@
 
 # Endpoint
 
-- URL : `/emas/chart/sell-price`
+- URL : `/api/investaccountservice/emas/chart/sell-price`
 
 # Request
 
