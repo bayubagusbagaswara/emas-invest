@@ -1,4 +1,32 @@
-<!DOCTYPE html>
+INSERT INTO NOTIFICATION_MANAGEMENT_SERVICE.NOTIFICATION_TEMPLATE (
+        CREATED_BY,
+        CREATED_DATE,
+        "LANGUAGE",
+        MESSAGE_SENDER,
+        MESSAGE_SUBJECT,
+        MODIFIED_BY,
+        MODIFIED_DATE,
+        TEMPLATE_CODE,
+        TEMPLATE_TYPE,
+        MESSAGE_CONTENT,
+        ICON,
+        MESSAGE_TITLE,
+        ACTION_INFO,
+        ACTION_LINK,
+        ADDITIONAL_INFO
+    )
+VALUES(
+        'SYSTEM',
+        TIMESTAMP '2023-11-03 09:09:00.000000',
+        'IDN',
+        'Bank Syariah Indonesia<development.bsi@ist.id>',
+        'Pengajuan Beli Emas Rutin Berhasil',
+        NULL,
+        NULL,
+        'REGISTER_BELI_EMAS_RUTIN_BAGIHASIL_SUCCESS',
+        'EMAIL',
+        TO_CLOB(
+            '<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +34,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
-    <title>Beli Emas Rutin Berhasil</title>
+    <title>Pengajuan Beli Emas Rutin Berhasil</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -74,7 +102,9 @@
         color: inherit !important;
         text-decoration: none !important;
         font-size: inherit !important;
-        font-family: inherit !important;
+      '
+        ) || TO_CLOB(
+            '  font-family: inherit !important;
         font-weight: inherit !important;
         line-height: inherit !important;
       }
@@ -159,6 +189,9 @@
       .fa-youtube {
         background: rgba(255, 255, 255, 0.2);
       }
+'
+        ) || TO_CLOB(
+            '
 
       .fa-instagram {
         background: rgba(255, 255, 255, 0.2);
@@ -243,7 +276,9 @@
               >
                 <img
                   src="https://storage.googleapis.com/bsisuperapp2.bankbsi.co.id/assets/email/logo.png"
-                  width="111px"
+            '
+        ) || TO_CLOB(
+            '      width="111px"
                   height="32px"
                   alt="Bsi logo"
                 />
@@ -302,8 +337,11 @@
                     <tr>
                       <td
                         style="
-                          padding: 25px 24px 24px 32px;
+                '
+        ) || TO_CLOB(
+            '          padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
@@ -314,8 +352,9 @@
                       <td
                         style="
                           padding: 25px 24px 24px 24px;
-                          font-weight: bold;
+                          font-weight: 400;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 1);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
@@ -329,6 +368,7 @@
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
@@ -340,13 +380,16 @@
                       <td
                         style="
                           padding: 25px 24px 24px 24px;
-                          font-weight: bold;
+                          font-weight: 400;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 1);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
                         "
-                      >
+                     '
+        ) || TO_CLOB(
+            ' >
                         ${pembelianBerdasarkan}
                       </td>
                     </tr>
@@ -355,6 +398,7 @@
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
@@ -367,12 +411,18 @@
                         style="
                           padding: 25px 24px 24px 24px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
                         "
                       >
-                        <span style="font-size: 14px; font-weight: bold"
+                        <span
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 1);
+                          "
                           >${accountAliasEmas}</span
                         ><br />
                         ${accountNumberEmas}
@@ -383,24 +433,34 @@
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
                         "
                       >
                         Rekening<br />
+'
+        ) || TO_CLOB(
+            '
                         Sumber
                       </td>
                       <td
                         style="
                           padding: 25px 24px 24px 24px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
                         "
                       >
-                        <span style="font-size: 14px; font-weight: bold"
+                        <span
+                          style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgba(0, 0, 0, 1);
+                          "
                           >${fromAccountAliasBgh}</span
                         ><br />
                         ${fromAccountNumberBgh}
@@ -411,6 +471,7 @@
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
@@ -422,6 +483,7 @@
                         style="
                           padding: 25px 24px 24px 24px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
@@ -431,10 +493,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td
+        '
+        ) || TO_CLOB(
+            '              <td
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
                           font-size: 14px;
@@ -446,6 +511,7 @@
                         style="
                           padding: 25px 24px 24px 24px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           border-bottom: 1px solid #e0e0e0;
                           font-size: 14px;
                           width: 10px;
@@ -459,6 +525,7 @@
                         style="
                           padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           width: 10px;
                           font-size: 14px;
                         "
@@ -469,6 +536,7 @@
                         style="
                           padding: 25px 24px 24px 24px;
                           background-color: #fafafa;
+                          color: rgba(0, 0, 0, 0.62);
                           font-size: 14px;
                           width: 10px;
                         "
@@ -480,7 +548,9 @@
                 </table>
               </td>
             </tr>
-          </tbody>
+    '
+        ) || TO_CLOB(
+            '      </tbody>
         </table>
         <table
           role="presentation"
@@ -495,21 +565,21 @@
               <td style="padding: 0 32px 0 32px; background-color: #ffffff">
                 <p
                   style="
-                    color: rgba(0, 0, 0, 0.38);
+                    color: rgba(0, 0, 0, 0.62);
                     font-family: DM Sans, sans-serif;
                     font-size: 12px;
-                    line-height: 16px;
+                    line-height: 5px;
                   "
                 >
                   Rekening Sumber
                 </p>
                 <p
                   style="
-                    color: rgba(0, 0, 0, 0.96);
-                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.62);
+                    font-weight: 400;
                     font-family: DM Sans, sans-serif;
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 12px;
+                    line-height: 5px;
                   "
                 >
                   ${fromAccountOwnerName}
@@ -519,7 +589,7 @@
                     color: rgba(0, 0, 0, 0.62);
                     font-family: DM Sans, sans-serif;
                     font-size: 12px;
-                    line-height: 16px;
+                    line-height: 5px;
                   "
                 >
                   ${fromAccountNumber}
@@ -541,7 +611,9 @@
                 </p>
                 <p></p>
               </td>
-            </tr>
+  '
+        ) || TO_CLOB(
+            '          </tr>
           </tbody>
         </table>
         <table
@@ -590,7 +662,9 @@
                             />
                           </a>
                           <a href="https://bankbsi.id/youtube_bsi">
-                            <img
+             '
+        ) || TO_CLOB(
+            '               <img
                               src="https://storage.googleapis.com/bsisuperapp2.bankbsi.co.id/assets/email/icon-youtube.png"
                               style="width: 30px; margin-left: 10px"
                             />
@@ -631,7 +705,9 @@
                         <p style="margin: 0">
                           PT Bank Syariah Indonesia terdaftar dan diawasi oleh
                           Otoritas Jasa Keuangan (OJK) serta merupakan peserta
-                          penjaminan Lembaga Penjamin Simpanan (LPS)
+                          penjaminan Lembaga'
+        ) || TO_CLOB(
+            ' Penjamin Simpanan (LPS)
                         </p>
                       </td>
                     </tr>
@@ -646,3 +722,11 @@
     <p>&nbsp;<br /></p>
   </body>
 </html>
+'
+        ),
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL
+    );

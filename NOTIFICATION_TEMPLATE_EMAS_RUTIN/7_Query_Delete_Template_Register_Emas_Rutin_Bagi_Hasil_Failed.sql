@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+DELETE FROM NOTIFICATION_MANAGEMENT_SERVICE.NOTIFICATION_TEMPLATE nt
+WHERE TEMPLATE_TYPE = 'EMAIL'
+    AND TEMPLATE_CODE = 'REGISTER_BELI_EMAS_RUTIN_BAGIHASIL_FAILED';
+INSERT INTO NOTIFICATION_MANAGEMENT_SERVICE.NOTIFICATION_TEMPLATE (
+        CREATED_BY,
+        CREATED_DATE,
+        "LANGUAGE",
+        MESSAGE_SENDER,
+        MESSAGE_SUBJECT,
+        MODIFIED_BY,
+        MODIFIED_DATE,
+        TEMPLATE_CODE,
+        TEMPLATE_TYPE,
+        MESSAGE_CONTENT,
+        ICON,
+        MESSAGE_TITLE,
+        ACTION_INFO,
+        ACTION_LINK,
+        ADDITIONAL_INFO
+    )
+VALUES(
+        'SYSTEM',
+        TIMESTAMP '2023-11-03 09:11:00.000000',
+        'IDN',
+        'Bank Syariah Indonesia<development.bsi@ist.id>',
+        'Pengajuan Beli Emas Rutin Gagal',
+        NULL,
+        NULL,
+        'REGISTER_BELI_EMAS_RUTIN_BAGIHASIL_FAILED',
+        'EMAIL',
+        TO_CLOB(
+            '<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -74,7 +105,9 @@
         color: inherit !important;
         text-decoration: none !important;
         font-size: inherit !important;
-        font-family: inherit !important;
+        font-fam'
+        ) || TO_CLOB(
+            'ily: inherit !important;
         font-weight: inherit !important;
         line-height: inherit !important;
       }
@@ -160,7 +193,9 @@
         background: rgba(255, 255, 255, 0.2);
       }
 
-      .fa-instagram {
+      .'
+        ) || TO_CLOB(
+            'fa-instagram {
         background: rgba(255, 255, 255, 0.2);
       }
 
@@ -243,7 +278,9 @@
               >
                 <img
                   src="https://storage.googleapis.com/bsisuperapp2.bankbsi.co.id/assets/email/logo.png"
-                  width="111px"
+                  widt'
+        ) || TO_CLOB(
+            'h="111px"
                   height="32px"
                   alt="Bsi logo"
                 />
@@ -302,7 +339,9 @@
                     <tr>
                       <td
                         style="
-                          padding: 25px 24px 24px 32px;
+                          '
+        ) || TO_CLOB(
+            'padding: 25px 24px 24px 32px;
                           background-color: #fafafa;
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
@@ -353,7 +392,9 @@
                     <tr>
                       <td
                         style="
-                          padding: 25px 24px 24px 32px;
+                          p'
+        ) || TO_CLOB(
+            'adding: 25px 24px 24px 32px;
                           background-color: #fafafa;
                           border-bottom: 1px solid #e0e0e0;
                           width: 10px;
@@ -401,7 +442,9 @@
                         "
                       >
                         <span style="font-size: 14px; font-weight: bold"
-                          >${fromAccountAliasBgh}</span
+                          >${fromAccountAliasBgh}</'
+        ) || TO_CLOB(
+            'span
                         ><br />
                         ${fromAccountNumberBgh}
                       </td>
@@ -454,7 +497,9 @@
                         ${transactionTime}
                       </td>
                     </tr>
-                    <tr>
+  '
+        ) || TO_CLOB(
+            '                  <tr>
                       <td
                         style="
                           padding: 25px 24px 24px 32px;
@@ -516,7 +561,9 @@
                 </p>
                 <p
                   style="
-                    color: rgba(0, 0, 0, 0.62);
+                    co'
+        ) || TO_CLOB(
+            'lor: rgba(0, 0, 0, 0.62);
                     font-family: DM Sans, sans-serif;
                     font-size: 12px;
                     line-height: 16px;
@@ -574,7 +621,9 @@
                             text-align: center;
                           "
                         >
-                          Butuh bantuan? Hubungi kami di 14040
+                          Butuh bantuan? Hubung'
+        ) || TO_CLOB(
+            'i kami di 14040
                         </p>
                         <p style="text-align: center">
                           <a href="https://bankbsi.id/facebook_bsi">
@@ -611,7 +660,9 @@
                           src="https://storage.googleapis.com/bsisuperapp2.bankbsi.co.id/assets/bsi-logo-dark-1.png"
                           alt="bsi logo"
                           class="g-img"
-                          width="133px"
+        '
+        ) || TO_CLOB(
+            '                  width="133px"
                           height="40px"
                           style="margin: 10px auto; display: block"
                         />
@@ -646,3 +697,11 @@
     <p>&nbsp;<br /></p>
   </body>
 </html>
+'
+        ),
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL
+    );
