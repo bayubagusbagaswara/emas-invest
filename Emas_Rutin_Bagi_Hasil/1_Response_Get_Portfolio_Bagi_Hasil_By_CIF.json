@@ -1,0 +1,29 @@
+[
+  {
+    "accountNumber": "7073674519",
+    "accountName": "NMK SH IARGANAGN RSAI AADNA",
+    "desc": "BSI TABUNGAN EASY MUDHARABAH",
+    "currency": "IDR",
+    "category": "6010",
+    "ammountAutoSave": 0.0,
+    "registerStatus": "N"
+  },
+  {
+    "accountNumber": "4323428410",
+    "accountName": "IARGANIGN RSIA AADNI",
+    "desc": "BSI TABUNGAN EASY MUDHARABAH",
+    "currency": "IDR",
+    "category": "6010",
+    "ammountAutoSave": 0.0,
+    "registerStatus": "N"
+  },
+  {
+    "accountNumber": "7123169028",
+    "accountName": "IARGANIGN RSIA AADNI",
+    "desc": "BSI TABUNGAN EASY MUDHARABAH",
+    "currency": "IDR",
+    "category": "6010",
+    "ammountAutoSave": 0.0,
+    "registerStatus": "N"
+  }
+]
